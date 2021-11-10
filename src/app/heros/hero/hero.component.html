@@ -1,0 +1,18 @@
+<h1>{{ nom }}</h1>
+
+<dl>
+    <td> Nom: </td>
+    <dd> {{ nom }}</dd>
+
+    <td> Age: </td>
+    <dd> {{ age }}</dd>
+    
+    <td> Fonction: </td>
+    <dd> {{ montrerNom()}}</dd>
+
+    <td> Uppercase: </td>
+    <dd> {{ nomCapitalized }}</dd>
+</dl>
+
+<button (click) ="changerNom()" class="btn btn-primary mx-1">Modifer Hero</button>
+<button (click) ="changerAge()" class="btn btn-primary mx-1">Modifer Age</button>

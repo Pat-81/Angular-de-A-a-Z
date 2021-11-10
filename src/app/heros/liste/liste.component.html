@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="my-5">
+        <h1 class="my-3 text-center">Liste des Héros </h1>
+        <ul class="list-group text-center">
+            <li class="list-group-item list-group-item-action" *ngFor="let hero of heros; let i = index">
+                {{ i + 1 }} - {{ hero }}
+            </li>
+        </ul>
+    </div>
+
+    <button (click)="effacerHero()" class="btn btn-danger btn-block">Effacer un héros</button>
+    <div class="text-center" *ngIf="herosSupprime; else nonSupprime">
+        <h3 class="my-3 text-center">Heros supprimé : <small>{{ herosSupprime }}</small></h3>
+    </div>
+
+    <ng-template #nonSupprime>
+        <h3 class="my-3 text-center">Rien n'a été supprimé</h3>
+    </ng-template>
+    
+</div>
