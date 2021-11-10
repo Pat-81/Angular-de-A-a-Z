@@ -12,7 +12,7 @@ import { ListeComponent } from './liste/liste.component';
         ListeComponent
     ],
     imports: [
-        // CommonModule
+        CommonModule
     ]
 })
 

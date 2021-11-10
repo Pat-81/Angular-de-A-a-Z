@@ -1,0 +1,28 @@
+<h3 class="text-center">Ajouter un personnage </h3>
+<hr>
+<form class="px-3 col-lg-10 mx-auto px-3 py-2 border rounded" (ngSubmit)="ajouter()">
+    <small>{{ nouveau.nom }}</small>
+    <div class="form-group">
+        <label for="nom">Nom du personnage</label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="nom" 
+            placeholder="Entrer le nom"
+            name="nom"
+            [(ngModel)]="nouveau.nom"
+            />
+    </div>
+    <div class="form-group">
+        <label for="puissance">Puissance</label>
+        <input 
+            type="number" 
+            class="form-control" 
+            id="puissance" 
+            placeholder="Taper la puissance"
+            name="puissance"
+            [(ngModel)]="nouveau.puissance"
+            />
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Ajouter</button>
+  </form>
